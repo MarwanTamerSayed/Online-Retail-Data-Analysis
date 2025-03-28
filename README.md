@@ -70,3 +70,15 @@
 - Generated customer-level aggregates:
   - **Monetary_value**: Sum of all purchases
   - **Frequency**: Count of unique invoices
+## Machine Learning Steps
+
+###  K-Means Clustering
+- The notebook applies the **K-Means algorithm** to group data into clusters.
+- The **Elbow Method** is used to determine the optimal number of clusters (`K`).
+- **Silhouette Score** is calculated to evaluate clustering performance.
+
+###  DBSCAN Clustering
+- The **DBSCAN algorithm** is used as an alternative to K-Means for density-based clustering.
+- Different values of `eps` and `min_samples` are tested to optimize clustering.
+- The best configuration is selected based on the **silhouette score**.
+- DBSCAN also detects **outliers** and labels them as `-1`.
